@@ -2,7 +2,7 @@
 
 A lightweight Windows utility to **dim side monitors** with hotkeys and a tray icon, with optional startup on login.
 
----
+
 
 ## Features
 
