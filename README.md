@@ -21,7 +21,7 @@ Requires **.NET SDK 8+**.
 
 ```powershell
 git clone <your-repo-url>
-cd Dim-Side-Monitors
+cd FocusMode
 dotnet build
 ```
 
