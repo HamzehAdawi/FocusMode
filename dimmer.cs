@@ -39,7 +39,7 @@ class DimmerApp : Form
         await Task.Delay(1000);
 
        	string exeDir = System.IO.Path.GetDirectoryName(Application.ExecutablePath)!;
-
+		
         string hotkeysPath = System.IO.Path.Combine(exeDir, "hotkeys.txt");
         if (!System.IO.File.Exists(hotkeysPath))
         {
@@ -68,7 +68,7 @@ class DimmerApp : Form
 
         trayIcon = new NotifyIcon
         {
-            Icon = new Icon(System.IO.Path.Combine(exeDir, "dimmerIcon.ico")),
+            Icon = new Icon(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("DimmerApp.dimmerIcon.ico")!),
             Text = "Monitor Dimmer",
             ContextMenuStrip = BuildTrayMenu(),
             Visible = true
@@ -254,14 +254,15 @@ class DimmerApp : Form
         base.OnFormClosed(e);
     }
 
-    [STAThread]
-    static void Main()
-    {
-        bool createdNew;
-        using var mutex = new System.Threading.Mutex(true, "MonitorDimmerSingleton", out createdNew);
-        if (!createdNew) return;
-
-        Application.EnableVisualStyles();
-        Application.Run(new DimmerApp());
-    }
-}
+   	   [STAThread]
+       static void Main()
+       {
+           bool createdNew;
+           using var mutex = new System.Threading.Mutex(true, "MonitorDimmerSingleton", out createdNew);
+           if (!createdNew) return;
+   
+           Application.EnableVisualStyles();
+           Application.Run(new DimmerApp());
+       }
+   } 
+    
