@@ -36,16 +36,15 @@ dotnet run
 - Double-click tray icon or use **Ctrl + 0** to toggle dimming
 
 
-
-### 3. To set the app to always run on startup (optional):
+<br><br>
+### ⚠️ To Set the app to always on (start with startup):
 
 1. Right-click the tray icon
 2. Check **“Start with Windows”** to enable or disable startup
 3. Close the program (right click exit from tray icon) and restart your computer.
+4. The app will now always launch automatically on startup, unless unchecked.
 
-The app will now always launch automatically on startup, unless unchecked.
-
-> ⚠️ Startup only works after the program has been run at least once
+> Startup only works after the program has been run at least once
 
 ---
 
