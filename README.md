@@ -62,9 +62,7 @@ dotnet run
 
 
 
-You can change the hotkeys to any keys or combo keys you like by editing the **hotkeys.txt** file.
-
-STEPS TO CHANGE HOTKEYS
+You can change the hotkeys to any keys or combo keys you like by editing the **hotkeys.txt** file:
 
 1. Open hotkeys.txt in a text editor (Notepad, VS Code, etc.)
 2. Find the entry for the hotkey you want to change (Toggle, Dim1, Dim2, or Dim3)
@@ -72,7 +70,8 @@ STEPS TO CHANGE HOTKEYS
 4. Save the file
 5. Restart the app to apply the changes
 
-UNDERSTANDING MODIFIERS AND KEYS
+
+TIP:
 
 Modifier numbers:
 0 = None
@@ -93,7 +92,7 @@ Dim1=2,D1      -> Ctrl + 1 (set dim 30%)
 Dim2=2,D2      -> Ctrl + 2 (set dim 60%)
 Dim3=2,D3      -> Ctrl + 3 (set dim 85%)
 
-TIP: You can combine modifiers. For example:
+You can combine modifiers:
 Toggle=6,D0    -> Ctrl + Shift + 0 (because 2 + 4 = 6)
 
 ---
