@@ -416,3 +416,16 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Build directories
+bin/
+obj/
+
+# User-specific project files
+*.user
+*.suo
+*.userosscache
+
+# VS Code/JetBrains/etc files (optional)
+.vscode/
+.idea/
