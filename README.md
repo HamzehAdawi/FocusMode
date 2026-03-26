@@ -67,7 +67,7 @@ dotnet run
 
 You can change the hotkeys to any keys or combo keys you like by editing the **hotkeys.txt** file:
 
-1. Open hotkeys.txt in a text editor (Notepad, VS Code, etc.)
+1. Open hotkeys.txt located in FocusMode directory with a text editor (Notepad, VS Code, etc.) 
 2. Find the entry for the hotkey you want to change (Toggle, Dim1, Dim2, or Dim3)
 3. Modify the modifier number and/or key
 4. Save the file
