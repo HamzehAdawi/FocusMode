@@ -19,13 +19,14 @@ Requires **.NET SDK 8+**.
 
 ```powershell
 git clone <your-repo-url>
-cd Dim-Side-Monitors-Windows
+cd Dim-Side-Monitors
 dotnet build
 ```
 
 - This creates `DimmerApp.exe` in `bin/Debug/net8.0/` (or `bin/Release/net8.0/` if using release build)
 
-
+**If you want to set the app to always run. Right click the tray icon and check 'Start with Windows'.
+This will set it to always run on startup. Close the program and restart your computer to test.***
 
 ### 2. Run the program
 
